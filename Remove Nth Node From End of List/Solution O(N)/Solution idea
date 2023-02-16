@@ -1,0 +1,8 @@
+Suppose M is the length of linked list, so one important thing to notice here is that the Nth node from the end is the (M - N + 1)th node from the beginning.
+Hence the problem could be modified to remove the (M − N + 1)th node from the beginning of the list.
+
+SOLUTION STEPS
+Traverse linked list and find the length M. 
+Again traverse linked list from the start till we reach the (M − N)th node. 
+Now we delete the (M - N + 1)th node and return the head pointer.
+Before deleting the node, we need to relink the next pointer of the (M - N)th node to the (M − N + 2)th node.
